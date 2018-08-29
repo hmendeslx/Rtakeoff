@@ -1,0 +1,21 @@
+sidebar <- dashboardSidebar(
+  sidebarMenu(id = 'sidebarmenu',
+              menuItem('x', tabName = 'x', icon = icon('line-chart')),
+              menuItem('y', tabName = 'y',
+                       icon = icon('line-chart'),
+                       menuItem('a',
+                                tabName = 'a',
+                                icon = icon('line-chart')),
+                       menuItem('b',
+                                tabName = 'b',
+                                icon = icon('line-chart'),
+                                menuSubItem('l',
+                                            tabName = 'l',
+                                            icon = icon('line-chart')),
+                                menuSubItem('m',
+                                            tabName = 'm',
+                                            icon = icon('line-chart'))),
+                       menuItem('c',
+                                tabName = 'c',
+                                icon = icon('line-chart'))
+              )))
